@@ -12,7 +12,7 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 [TestFixture]
-public class InsuranceQuoteTestsTest
+public class InsuranceQuoteTests
 {
     private IWebDriver driver;
     public IDictionary<string, object> vars { get; private set; }
@@ -29,7 +29,7 @@ public class InsuranceQuoteTestsTest
     {
         driver.Quit();
     }
-    string baseURL = "http://localhost/prog8170a04/getQuote.html/prog8170a04/getQuote.html";
+    string baseURL = "http://localhost/prog8170a04/getQuote.html";
     [Test]
     public void insuranceQuote_25and3and0_OutputQuote2500()
     {
@@ -71,7 +71,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_InvalidEmail_28and3and0_ValidationError()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -105,7 +105,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_InvalidPhone_27and3and0_ValidationError()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1106, 816);
 
         //Act
@@ -138,7 +138,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_InvalidPostCode_35and17and1_ValidationError()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -172,7 +172,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_OmitAccidents_37and8_ValidationError()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -204,7 +204,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_OmitAge_5and0_ValidationError()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -237,7 +237,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_OmitDrivingExperience_45and0_ValidationError()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -268,7 +268,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_OmitFirstname_25and3and0_ValidationError()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -300,7 +300,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_OmitLastname_26and3and0_ValidationError()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -331,7 +331,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_17and0and0_OutputQuote4000()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -367,7 +367,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_29and12and1_OutputQuote1800()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -403,7 +403,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_32and5and1_OutputQuote1875()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -439,7 +439,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_49and37and2_OutputNoInsurance()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -475,7 +475,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_OmitAddress_19and1and1_ValidationError()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
@@ -506,7 +506,7 @@ public class InsuranceQuoteTestsTest
     public void insuranceQuote_41and11and4_OutputNoInsurance()
     {
         //Arrange
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(1102, 816);
 
         //Act
